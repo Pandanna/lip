@@ -17,7 +17,7 @@ let hex = ['0'-'9' 'A'-'F' 'a'-'f']
 let atok = capitals chr*
 let btok = lower_vowels+
 let ctok = (lower_cons|upper_cons)* (lower_vowels|upper_vowels) (lower_cons|upper_cons)*
-let dtok = ['-']? num* (['.'] number*)?
+let dtok = ['-']? num* (['.'] num*)?
 let etok = ("0x" | "0X") hex+
 
 
